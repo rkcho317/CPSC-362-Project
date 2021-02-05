@@ -57,7 +57,7 @@ body {
 /* Start: background(image) */
 .background {
         position: relative;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../img/covid-19.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('covid-19.jpg');
         height: 65vh;
         background-size: cover;
         background-position: center;
