@@ -6,8 +6,14 @@ jobs:
   getp:
     runs-on: ubuntu-latest
     steps:
-      - name: Gte the preview
+      - uses: actions/checkout@v2
+        name: Checkout the repository
+        
+      - name: Get the preview
         id: html_preview
         uses: pavi2410/html-preview-action@v2
         with:
-          html_file: 'index.html'
+          html_file: 'index.html'  
+      
+      - run: echo ${{steps.html_preview.outputs.url}}
+        name: Get the url
