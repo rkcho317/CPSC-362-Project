@@ -1,14 +1,10 @@
 name: Site preview
-
 on:
   pull_request:
     branches: [ master ]
-
 jobs:
   getp:
-
     runs-on: ubuntu-latest
-
     steps:
     - name: Get the preview of the website
     - id: html_preview
