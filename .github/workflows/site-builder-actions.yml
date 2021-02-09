@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  getp:
+  website-preview:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
