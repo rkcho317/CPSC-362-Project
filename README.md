@@ -8,4 +8,4 @@ Covid-19 Web Application
 # API
   - source: https://rapidapi.com/Gramzivi/api/covid-19-data/endpoints
 # Demo
-  site: https://itsjuanito.github.io/CPSC-362-Project/
+  - site: https://itsjuanito.github.io/CPSC-362-Project/
