@@ -1,7 +1,7 @@
 name: Site preview
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   website-preview:
     runs-on: ubuntu-latest
