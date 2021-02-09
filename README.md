@@ -1,5 +1,5 @@
 # COVID-19-Nucleus
-Covid-19 Web Application
+COVID-19 Web Application
 
 ## Files 
   - index.html: main html file that contains various links and tags to host the site.
