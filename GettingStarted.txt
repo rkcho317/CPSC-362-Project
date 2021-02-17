@@ -1,0 +1,8 @@
+Here's a few pointers about the file/folder structure.
+    -Each page has its own html/js/css files
+    -Main.css and Main.js files are used for code/styling across the entire site
+    -All images/videos are placed in the media folder. Feel free to add subfolders.
+    -Js/css libraries like bootstrap or jquery can be downloaded and placed in their respective js/css folders, or you can use a CDN (recommended)
+
+Right now all of the files are empty except the home page (index files). 
+You can copy/paste the code from the index files into your files to start with a template. Dont forget to copy the js and css files.
