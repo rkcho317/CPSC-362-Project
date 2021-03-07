@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stats/stats.css">
+    <script defer src="stats/country_list.js"></script>
     <script defer src="stats/state_list.js"></script>
     <script defer src="stats/script.js"></script>
     <title>COVID-19 Statistics</title>
@@ -27,7 +28,13 @@
     </div>
 
 
-    <div class="card-main">
+    <div class="card-main mt-20 ml-20 mr-20 mb-10">
+
+        <h3 class="font-bold text-4xl text-center">
+            <span class="text-red-500">U</span>
+            <span class="text-blue-500">S</span>
+        </h3>
+
         <h3 class="font-bold text-center text-xl mt-8 mb-2">
             National data
         </h3>
@@ -91,6 +98,48 @@
                 <h2 id="state_total_tests" class="text-white font-semibold"></h2>
             </div>
         </div>
+    </div>
+
+
+    <div class="card-main ml-20 mr-20 mb-20">
+        <h3 class="text-yellow-500 font-bold text-4xl text-center">
+            COVID-19 Statistics
+        </h3>
+        <h3 class="font-bold text-4xl text-center">
+            for <span class="text-blue-500">COUNTRIES</span>
+        </h3>
+
+        <h4 class="font-semibold text-sm text-center mt-10 mb-5 p-4 bg-indigo-500
+         text-white w-max mx-auto rounded-3xl">
+         Select a country
+        </h4>
+
+        <div class="w-max mx-auto mt-8">
+            <select class="select-option" name="country-options" id="country-select" onchange="onCountrySelected(this)">
+            </select>
+        </div>
+
+        <h3 class="mt-5 text-center text-red-500 text-lg" id="country-error"></h3>
+        <div class="grid grid-cols-3 max-w-max p-16 mx-auto space-x-3" id="country-stats">
+            
+            <div class="bg-pink-300 card-stats">
+                <h3 class="card-title text-gray-700">Total positive cases</h3>
+                <h2 id="country_positive_cases" class="text-gray-700 font-semibold"></h2>
+            </div>
+    
+            <div class="bg-green-300 card-stats">
+                <h3 class="card-title text-gray-700">Total tests performed</h3>
+                <h2 id="country_total_tests" class="text-gray-700 font-semibold"></h2>
+            </div>
+    
+            <div class="bg-red-300 card-stats">
+                <h3 class="card-title text-gray-700">Total deaths</h3>
+                <h2 id="country_deaths" class="text-gray-700 font-semibold"></h2>
+            </div>
+
+        </div>
+
+        
     </div>
 
 </body>
