@@ -1,0 +1,15 @@
+.background-links {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../media/covid-19.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.background-text-links {
+    color: #FFF;
+    padding: 20px 0 20px 0;
+}
+
+.background-text-links a {
+    color: #FFF;
+}
