@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stats/stats.css">
+    <script defer src="stats/state_list.js"></script>
+    <script defer src="stats/script.js"></script>
+    <title>COVID-19 Statistics</title>
+</head>
+<body class="bg-gray-100">
+    
+    <div class="grid grid-cols-3 bg-green-200 h-auto w-full">
+
+        <div class="col-span-2 mx-auto my-auto">
+            <h1 class=" text-gray-800 text-4xl font-bold tracking-wide">
+                Find out the
+                <span class="text-green-500">COVID-19</span>
+                Stats in your region
+            </h1>
+        </div>
+
+        <div class="mt-5">
+            <img class="block sm:max-w-2xl h-auto max-h-72" src="stats/images/covid-image.svg" alt="image-logo">
+        </div>
+    </div>
+
+
+    <div class="card-main">
+        <h3 class="font-bold text-center text-xl mt-8 mb-2">
+            National data
+        </h3>
+        <hr class="border-2 border-red-400 max-w-sm mx-auto">
+        <p class="text-gray-600 text-lg text-center mt-2">The statistics below are the national COVID-19 statistics that has
+                been recorded since the start of the pandemic
+        </p>
+    
+        <div class="grid grid-cols-4 max-w-max p-16 mx-auto space-x-3">
+            
+            <div class="bg-yellow-500 card-stats">
+                <h3 class="card-title">Total positive cases</h3>
+                <h2 id="nation_positive_cases" class="text-white font-semibold"></h2>
+            </div>
+    
+            <div class="bg-red-500 card-stats">
+                <h3 class="card-title">Total deaths</h3>
+                <h2 id="nation_deaths" class="text-white font-semibold"></h2>
+            </div>
+    
+            <div class="bg-blue-500 card-stats">
+                <h3 class="card-title">Total hospitalized</h3>
+                <h2 id="nation_hospitalization" class="text-white font-semibold"></h2>
+            </div>
+    
+            <div class="bg-green-500 card-stats">
+                <h3 class="card-title">Total tests performed</h3>
+                <h2 id="nation_total_tests" class="text-white font-semibold"></h2>
+            </div>
+        </div>
+
+        <h3 class="bg-yellow-300 bg-opacity-90 font-semibold text-sm
+             text-gray-700 p-4 rounded-3xl text-center mx-auto max-w-sm">
+                Get the statistics for your state
+        </h3>
+
+        <div class="w-max mx-auto mt-8">
+            <select class="select-option" name="states-options" id="states-list">
+            </select>
+        </div>
+
+        <div class="grid grid-cols-4 max-w-max p-16 mx-auto space-x-3" id="state-stats">
+            
+            <div class="bg-yellow-500 card-stats">
+                <h3 class="card-title">Total positive cases</h3>
+                <h2 id="state_positive_cases" class="text-white font-semibold"></h2>
+            </div>
+    
+            <div class="bg-red-500 card-stats">
+                <h3 class="card-title">Total deaths</h3>
+                <h2 id="state_deaths" class="text-white font-semibold"></h2>
+            </div>
+    
+            <div class="bg-blue-500 card-stats">
+                <h3 class="card-title">Total hospitalized currently</h3>
+                <h2 id="state_hospitalization" class="text-white font-semibold"></h2>
+            </div>
+    
+            <div class="bg-green-500 card-stats">
+                <h3 class="card-title">Total tests performed</h3>
+                <h2 id="state_total_tests" class="text-white font-semibold"></h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
