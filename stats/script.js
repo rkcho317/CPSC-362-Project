@@ -30,14 +30,16 @@ function setSelectOptions() {
         let options = document.createElement("option")
         options.text = state_map[key].toString()
         options.value = key.toString()
-        options.onclick = onClick
         selectOptions.append(options)
     }
 }
 
-const onClick = function(e) {
-    let value = this.value.toString()
-    let url = "https://api.covidtracking.com/v1/states/"+value+"/current.json"
+document.addEventListener("DOMContentLoaded", getCasesTotal)
+
+function onChange(selectedChoice){
+    var selectedStateName = selectedChoice.options[selectedChoice.selectedIndex].text;  //Gets selected value
+    var key = getKeyByValue(state_map, selectedStateName);  //Gets the key for the selected value, only works if all values are unique
+    let url = "https://api.covidtracking.com/v1/states/"+key+"/current.json"
     fetch(url)
     .then(response => response.json())
     .then(values => {
@@ -49,5 +51,7 @@ const onClick = function(e) {
     state_stats.style.visibility = "visible"
 }
 
-
-document.addEventListener("DOMContentLoaded", getCasesTotal)
+//Assists the onChange() function
+function getKeyByValue(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+  }
