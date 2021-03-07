@@ -609,7 +609,7 @@ video {
 .select-option {
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   --tw-border-opacity: 1;
   border-color: rgba(248, 113, 113, var(--tw-border-opacity));
   border-radius: 0.75rem;
@@ -678,7 +678,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   border-radius: 0.5rem;
-  margin: 5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
