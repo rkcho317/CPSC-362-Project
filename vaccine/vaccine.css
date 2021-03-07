@@ -1,0 +1,62 @@
+#flex-container {
+  display: flex;
+}
+#banner-title {
+  flex-grow: 2;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-family:sans-serif;
+  color: #07445f;
+  font-size:2.5em;
+}
+#top-banner {
+  height:225px;
+  display:flex;
+  flex-grow:2;
+  padding:20px;
+  background:#a1d7dec7;
+}
+.different-vaccines {
+  background:#00bcd40f;
+  box-shadow: inset 1px 1px 4px 0px #80808087;
+  font-family:sans-serif;
+}
+.how-to-get {
+  background:#00bcd40f;
+  box-shadow: inset 1px 1px 4px 0px #80808087;
+  font-family:sans-serif;
+}
+.side-effects {
+  box-shadow: 0px 2px 5px 0px #80808087;
+  font-family:sans-serif;
+}
+li {
+  font-family:sans-serif;
+  color:#333333e8;
+  font-size:15px;
+}
+ul {
+  line-height: 1.5em;
+}
+
+.row-padding {
+  padding: 50px;
+}
+h2 {
+  font-size:1.4em;
+}
+
+.subtitles {
+  line-height:1.6;
+  font-family:sans-serif;
+  font-size:0.99em;
+  color:#181819;
+  font-weight:545;
+}
+
+h3 {
+  font-size:0.99em;
+  font-family:sans-serif;
+  color:#181819;
+  font-weight:545;
+}
