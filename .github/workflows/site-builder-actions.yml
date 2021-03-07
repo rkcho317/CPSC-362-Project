@@ -1,9 +1,9 @@
 name: Site preview
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
-  website-preview:
+  getp:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
