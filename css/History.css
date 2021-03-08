@@ -1,0 +1,18 @@
+.background-history {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../media/covid-19.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+}
+
+.section-container{
+    margin:50px;
+    padding:25px;
+    color: white;
+    background-color: rgba(94, 41, 43, 0.65);
+}
+
+.blocks{
+    background-color: rgba(166, 61, 64, 0.75);
+    padding:35px;
+}
