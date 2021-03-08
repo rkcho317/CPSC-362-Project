@@ -5,11 +5,33 @@
     text-align: center;
 }
 
-.background-text-links {
+#background-text-links {
     color: #FFF;
     padding: 20px 0 20px 0;
 }
 
-.background-text-links a {
+#background-text-links a {
     color: #FFF;
 }
+
+hr.country-sep {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.org-sep {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toggle-ctrl {
+    cursor: pointer;
+}
+
+.link-desc {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+} 
